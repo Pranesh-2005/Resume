@@ -7,17 +7,13 @@ export type Props =
   | {
       variant: 'withResponsibilities';
       company: string;
-      companyImg: string;
-      role: string;
       timeFrame: string;
       shortSummary: string;
-      responsibilities: { text: string; iconUrl: string }[];
+      responsibilities: { text: string; iconUrl: string; url?: string }[];
     }
   | {
       variant: 'simple';
-      role: string;
       company: string;
-      companyImg: string;
       timeFrame: string;
       shortSummary: string;
     };
@@ -31,9 +27,8 @@ const ProfessionalExperience = (props: Props): JSX.Element => {
   return (
     <Styled.Container>
       <Styled.Header>
-        <Styled.Company companyImg={props.companyImg}>
+        <Styled.Company>
           {props.company}
-          <Styled.Role>{props.role}</Styled.Role>
         </Styled.Company>
 
         <Styled.TimeFrame>{props.timeFrame}</Styled.TimeFrame>
@@ -46,6 +41,7 @@ const ProfessionalExperience = (props: Props): JSX.Element => {
         variant={'medium'}
         withAnimatedPresence={false}
       />
+
       {props.variant === 'withResponsibilities' && (
         <TextList
           variant={'simple'}
@@ -55,4 +51,5 @@ const ProfessionalExperience = (props: Props): JSX.Element => {
     </Styled.Container>
   );
 };
+
 export default ProfessionalExperience;

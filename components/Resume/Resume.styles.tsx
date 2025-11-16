@@ -147,9 +147,10 @@ export const Projects = styled.div`
 `;
 
 export const University = styled.p`
-  color: ${({ theme }) => theme.gray.dark};
+  color: ${({ theme }) => theme.portfolio.resumeColors.darkText};
   margin-bottom: 1rem;
 `;
+
 
 export const HR = styled.hr`
   border-top: 3px solid

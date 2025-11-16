@@ -7,13 +7,6 @@ export interface Props {
   children: React.ReactNode;
 }
 
-/**
- *Renders wrapper for desktop screens with system tray
- *@function PortfolioLayout
- *@param {string} title - title to be added to meta description
- *@param {ReactNode} children - content of layout
- *@returns {JSX.Element} - Rendered PortfolioLayout component
- */
 const PortfolioLayout: FC<Props> = ({ children, title }): JSX.Element => {
   return (
     <>
@@ -24,8 +17,14 @@ const PortfolioLayout: FC<Props> = ({ children, title }): JSX.Element => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta name="theme-color" content="#000000" />
+
         <title>{title}</title>
+
+        {/* ⭐ Your logo favicon + apple-touch-icon */}
+        <link rel="icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
       </Head>
+
       <Styled.Container>{children}</Styled.Container>
     </>
   );

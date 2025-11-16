@@ -155,7 +155,7 @@ const Resume = (): JSX.Element => {
           <Styled.Projects>
             <p>
               Links to some of my projects and work can be found on{' '}
-              <Link href={'/portfolio/projects'}>
+              <Link href={'https://praneshjs.vercel.app/#projects'}>
                 pranesh.dev/portfolio/projects
               </Link>{' '}
               and details can be provided upon request via a scheduled demo

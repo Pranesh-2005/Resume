@@ -4,7 +4,7 @@ import React from "react";
 import PortfolioLayout from "../components/PortfolioLayout/PortfolioLayout";
 import Resume from "../components/Resume/Resume";
 
-const Home: NextPage = () => {
+const PortfolioLandingPage: NextPage = () => {
   return (
     <PortfolioLayout title="Pranesh | Résumé">
       <Resume />
@@ -12,4 +12,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default PortfolioLandingPage;

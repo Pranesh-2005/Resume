@@ -5,6 +5,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
+import * as React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -38,41 +39,30 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Preload local fonts */}
-          <link 
-            rel="preload" 
-            href="/assets/fonts/SegoeUIVariable.woff2" 
-            as="font" 
-            type="font/woff2" 
-            crossOrigin="anonymous" 
-          />
-          
-          {/* Google Fonts as fallback */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap"
             rel="stylesheet"
           />
 
-          {/* App Icons */}
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/logo.png" />
           <link rel="apple-touch-icon" href="/logo.png" />
-          
-          {/* Meta Tags */}
-          <meta property="og:title" content="Pranesh | AIML Engineer" />
+
+          <meta property="og:title" content="Pranesh | AIML Developer" />
           <meta name="author" content="Pranesh" />
           <meta property="og:locale" content="en_US" />
           <meta
             name="description"
-            content="Pranesh | AIML Engineer | Resume & Portfolio"
+            content="Pranesh | AIML Developer | Portfolio"
           />
           <meta
             property="og:description"
-            content="Pranesh | AIML Engineer | Resume & Portfolio"
+            content="Pranesh | AIML Developer | Portfolio"
           />
-          <meta property="og:url" content="https://pranesh.dev/" />
-          <meta property="og:site_name" content="Pranesh Portfolio" />
+
+          <meta property="og:url" content="https://praneshjs.vercel.app" />
+          <meta property="og:site_name" content="praneshs" />
         </Head>
 
         <body>
