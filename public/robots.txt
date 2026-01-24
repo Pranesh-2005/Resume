@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://praneshresume.vercel.app/sitemap.xml
+
+Allow: /
+
