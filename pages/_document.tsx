@@ -49,20 +49,22 @@ export default class MyDocument extends Document {
           <link rel="icon" href="/logo.png" />
           <link rel="apple-touch-icon" href="/logo.png" />
 
-          <meta property="og:title" content="Pranesh | AIML Developer" />
+          <meta property="og:title" content="Pranesh | Resume" />
           <meta name="author" content="Pranesh" />
           <meta property="og:locale" content="en_US" />
           <meta
             name="description"
-            content="Pranesh | AIML Developer | Portfolio"
+            content="Pranesh Resume - This a personal resume website showcasing my skills and projects."
           />
+          <meta property="keywords" content="Pranesh, Resume, Portfolio, Pranesh Resume, Pranesh Resume Website, Resume like website, Pranesh BIT, Pranesh AIML, Pranesh Developer, Resume Style Website, Pranesh Resume Style Website" />
+          <meta property="og:type" content="website" />
           <meta
             property="og:description"
-            content="Pranesh | AIML Developer | Portfolio"
+            content="Pranesh Resume - This a personal resume website showcasing my skills and projects."
           />
 
-          <meta property="og:url" content="https://praneshjs.vercel.app" />
-          <meta property="og:site_name" content="praneshs" />
+          <meta property="og:url" content="https://praneshresume.vercel.app" />
+          <meta property="og:site_name" content="Pranesh Resume" />
         </Head>
 
         <body>
