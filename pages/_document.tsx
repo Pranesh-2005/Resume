@@ -62,7 +62,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Pranesh Resume - This a personal resume website showcasing my skills and projects."
           />
-
+          <link rel="canonical" href="https://praneshresume.vercel.app" />
           <meta property="og:url" content="https://praneshresume.vercel.app" />
           <meta property="og:site_name" content="Pranesh Resume" />
         </Head>
